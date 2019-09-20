@@ -1,0 +1,30 @@
+{
+  "name": "mrfortnite",
+  "version": "1.0.0",
+  "description": "Mr Fortnite. Powered by Nikku",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc",
+    "tsc:build": "tsc --build",
+    "start": "npm run tsc && npm run start:prod",
+    "start:clean": "npm run clean && npm run start",
+    "start:dev": "cross-env NODE_ENV=DEVELOPMENT ts-node main",
+    "start:hot": "nodemon -e ts --exec npm run start:dev",
+    "start:prod": "cross-env NODE_ENV=PRODUCTION node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aXises/MrFortnite.git"
+  },
+  "author": "aXises",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aXises/MrFortnite/issues"
+  },
+  "homepage": "https://github.com/aXises/MrFortnite#readme",
+  "dependencies": {
+    "cross-env": "^5.2.1",
+    "nikku": "^2.7.1",
+    "typescript": "^3.6.3"
+  }
+}

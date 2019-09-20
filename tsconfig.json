@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+      "module": "commonjs",
+      "target": "es2017",
+      "moduleResolution": "node",
+      "allowSyntheticDefaultImports": true,
+      "noImplicitAny": false,
+      "removeComments": true,
+      "resolveJsonModule": true,
+      "allowJs": false
+    },
+    "exclude": [
+      "node_modules"
+    ]
+  }
