@@ -24,10 +24,7 @@ export default class ARPSpoof extends ExecutableCommand {
         });
     }
 
-    public setCustomAction(): Action {
-        return new Action(async (state: OnMessageState) => {
-            state.getHandle().channel.send(str);
-            return true;
-        });
+    public async onAction(state: OnMessageState): Promise<void> {
+        state.getHandle().channel.send(str);
     }
 }

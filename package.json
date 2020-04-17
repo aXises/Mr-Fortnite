@@ -24,7 +24,9 @@
   "homepage": "https://github.com/aXises/MrFortnite#readme",
   "dependencies": {
     "cross-env": "^5.2.1",
-    "nikku": "^2.7.1",
+    "linkify": "^0.2.1",
+    "linkifyjs": "^2.1.9",
+    "nikku": "^2.7.2",
     "typescript": "^3.6.3"
   }
 }
